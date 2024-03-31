@@ -1,0 +1,24 @@
+version: '0.0.1'
+
+services:
+  postgres:
+    image: postgres
+    volumes:
+      - ./db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD="password_is_1234"
+    ports:
+      - "5432:5432"
+    networks:
+      - pg_network
+  pgAdmin:
+    image: dpage/pgadmin4
+    networks:
+      - pg_network
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=teste@teste.com
+      - PGADMIN_DEFAULT_PASSWORD="password_is_1234"
+    ports:
+      - "80:80"
+networks:
+  pg_network:
