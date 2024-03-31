@@ -1,6 +1,6 @@
 # E-COMMERCE DB EXAMPLE
 Exemplo de modelagem de dados para um e-commerce de livraria.
-[Modelagem dos Dados]("https://drive.google.com/file/d/184863WhnC8mMLBFbJcJ5--K-kx3I56CB/view?usp=sharing")
+[Modelagem dos Dados](https://drive.google.com/file/d/184863WhnC8mMLBFbJcJ5--K-kx3I56CB/view?usp=sharing)
 
 ## Arquivos
 [Docker compose](./docker-compose.yaml)
